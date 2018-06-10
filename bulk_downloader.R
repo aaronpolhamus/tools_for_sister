@@ -20,6 +20,6 @@ for(package in packages_you_want){
 unique_package_list <- unique(dependencies_list)
 for(package_to_download in unique_package_list){
   print(sprintf("download %s binary to %s", package, OUTPUT_DIRECTORY))
-  download.packages(pkgs = package_to_download, destdir = "~/Desktop/test")
+  download.packages(pkgs = package_to_download, destdir=OUTPUT_DIRECTORY)
 }
 
